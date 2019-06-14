@@ -1,4 +1,9 @@
-/* 
+/*
+Vue.js allows us to build "reactive" applications. This means that when an
+instance is created all the properties defined inside the data object are added
+to Vue's reactivity system. Vue's reactivity system will constantly monitor the
+properties defined and if one of them changes it will update the view.
+
 Every Vue.js application starts by creating a new Vue instance which is
 the root of the application itself. (Root Vue instance)
 
@@ -18,6 +23,7 @@ Options -
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello World!'
+        message: 'Hello World!',
+        value: 5
     }
 })

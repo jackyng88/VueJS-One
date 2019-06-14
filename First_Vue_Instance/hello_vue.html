@@ -15,7 +15,13 @@
          <h1 v-text="message"> </h1>
         -->
     <div id="app">
-        {{ message }}
+        <h1>{{ message }}</h1>
+        <h3>{{ value }}</h3>
+        <h2>{{ value * 5 }}</h2>
+        <h2>{{ "Hello " + "Vue!" }}</h2>
+        <h2>{{ (33/11) * 5 }}</h2>
+        <h2>{{ Math.random() }}</h2>
+        <h2>{{ message.split('').reverse().join('') }}</h2>
     </div>
 
     <!-- Using Vue JS CDN (Content Delivery Network) -->

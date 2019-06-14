@@ -10,6 +10,15 @@ the root of the application itself. (Root Vue instance)
 We start by creating a variable named 'app' (by convention) and instantiating
 it to a new Vue object with properties.
 
+Vue HTML file specific directives - 
+v-text = can be used in a similar fashion to just header tag with mustache sytnax.
+
+v-bind = One of the ways to bind various objects with Vue.
+
+Note - As a short-hand you can forego using v-bind on something like 
+<img v-bind:src="imgSrc" alt=""> by just doing <img :src="imgSrc" alt="">
+This works with <a href> </> also.
+
 Options -
     el - Element. Expects as it's value a CSS selector pointing to our HTML
          element in our page where we want to mount our instance. For example
@@ -24,6 +33,8 @@ var app = new Vue({
     el: '#app',
     data: {
         message: 'Hello World!',
-        value: 5
+        value: 5,
+        imgSrc: "https://images2.minutemediacdn.com/image/upload/c_crop,h_1190,w_2119,x_0,y_95/f_auto,q_auto,w_1100/v1554922320/shape/mentalfloss/549058-istock-471884456.jpg",
+        link: "https://vuejs.org"
     }
 })

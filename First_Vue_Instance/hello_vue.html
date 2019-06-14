@@ -22,6 +22,11 @@
         <h2>{{ (33/11) * 5 }}</h2>
         <h2>{{ Math.random() }}</h2>
         <h2>{{ message.split('').reverse().join('') }}</h2>
+        <!-- The following img link does not work so we need to use a v-bind-->
+        <img src="{{imgSrc}}" alt="">
+        <img v-bind:src="imgSrc" alt="">
+
+        <a v-bind:href="link">Official Vue.js Website</a>
     </div>
 
     <!-- Using Vue JS CDN (Content Delivery Network) -->

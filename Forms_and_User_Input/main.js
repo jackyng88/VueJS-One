@@ -13,7 +13,8 @@ v-model = The v-model directive allow us to create two-way data bindings to allo
 var app = new Vue ({
     el: "#app",
     data: {
-        color: 'green'
+        comment: null,
+        comments: [],
     }
 
 })
